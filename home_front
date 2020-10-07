@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>float&clear</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			background: pink;
+		}
+		.container{
+			border: 3px solid black;
+			border-radius: 13px;
+			width: 800px;
+			margin: 10px auto; 
+		}
+		.item{
+			border: 3px solid violet;
+			border-radius: 13px; 
+			margin: 10px;
+			padding: 5px 22px;
+		}
+		#fruit{
+			float: left;
+			width: 47%;
+		}
+		#vegiterian{
+			float: left;
+			width: 47%;
+		}
+		#drinks{
+			/*float: left;*/
+			clear: both;
+			width: 100%;
+		}
+		p,h1{
+			/*text-align: end;*/
+			text-align: justify;
+		}
+		#heading{
+			margin: 4px auto;
+			width: 350px;
+			/*height: 41px;*/ /*this height does not make any sense for shifting*/
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 id="heading">this is my heading</h1>
+		<div class="item" id="fruit">
+			<h3>fruit heaidng</h3>
+			<p class="para" id="fruitpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta adipisci omnis tempora eum provident consequatur sit labore reprehenderit dolorum alias perferendis dolorem maxime amet blanditiis ad vitae sed nesciunt, voluptas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur alias cumque reiciendis temporibus impedit, vero sint maxime voluptatibus sed similique magni officiis soluta earum atque fugit ex, incidunt consectetur. Praesentium tenetur animi iste delectus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio dolor labore fuga natus facilis voluptatem quam voluptatibus, reprehenderit velit illum! Cupiditate corrupti dolores molestias sed ducimus nostrum, excepturi enim. Qui.</p>
+		</div>
+		<div class="item" id="vegiterian">
+			<h3>vegiterian heaidng</h3>
+			<p class="para" id="vegiterianpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta adipisci omnis tempora eum provident consequatur sit labore reprehenderit dolorum alias perferendis dolorem maxime amet blanditiis ad vitae sed nesciunt, voluptas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum vel praesentium, voluptate repellendus soluta porro, ducimus. Voluptas, laudantium est pariatur. Sed voluptatibus, nam fugit. Necessitatibus facilis fugiat, aut, adipisci soluta neque amet minus vita Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta necessitatibus rem amet deserunt distinctio eveniet asperiores, placeat, nulla enim deleniti dolores nam consequuntur sapiente ea aperiam expedita, ipsum repudiandae eius?</p>
+		</div>
+		<div class="item" id="drinks">
+			<h3>drinks heaidng</h3>
+			<p class="para" id="drinkspara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta adipisci omnis tempora eum provident consequatur sit labore reprehenderit dolorum alias perferendis dolorem maxime amet blanditiis ad vitae sed nesciunt, voluptas.</p>
+		</div>
+	</div>
+</body>
+</html>
